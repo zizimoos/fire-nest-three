@@ -5,7 +5,7 @@ import { Coin } from './dto/coin.dto';
 @Controller('coins')
 export class CoinsController {
   constructor(private readonly coinsService: CoinsService) {}
-  private coins: Coin[] = [];
+  private coins: Coin[];
 
   @Get()
   async getAll(): Promise<Coin[]> {
